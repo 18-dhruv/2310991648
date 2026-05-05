@@ -1,4 +1,8 @@
 const axios = require("axios");
+require("dotenv").config({ path: "../.env" });
+
+const TOKEN = process.env.TOKEN;
+const BASE_URL = process.env.BASE_URL;
 
 let accessToken = "";
 
@@ -11,7 +15,7 @@ async function Log(stack, level, pkg, message) {
 
   try {
     await axios.post(
-      "http://20.207.122.201/evaluation-service/logs",
+      `${BASE_URL}/logs`,
       {
         stack: stack,
         level: level,

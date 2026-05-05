@@ -1,5 +1,5 @@
 {
-  "name": "logging_middleware",
+  "name": "vehicle_maintence_scheduler",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
